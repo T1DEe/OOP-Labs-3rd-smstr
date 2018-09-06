@@ -1,4 +1,4 @@
-# OOP_Lab1
-Task from university
+# OOP_Labs
+Task from BSTU
 
 Artemy Markovsky, group 4, POIT
