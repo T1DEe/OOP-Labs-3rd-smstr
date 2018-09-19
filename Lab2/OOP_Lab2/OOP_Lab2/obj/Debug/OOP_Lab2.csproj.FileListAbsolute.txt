@@ -1,0 +1,14 @@
+C:\Users\Artemy\Desktop\Lab 2\OOP_Lab2\OOP_Lab2\bin\Debug\OOP_Lab2.exe.config
+C:\Users\Artemy\Desktop\Lab 2\OOP_Lab2\OOP_Lab2\bin\Debug\OOP_Lab2.exe
+C:\Users\Artemy\Desktop\Lab 2\OOP_Lab2\OOP_Lab2\bin\Debug\OOP_Lab2.pdb
+C:\Users\Artemy\Desktop\Lab 2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.csprojAssemblyReference.cache
+C:\Users\Artemy\Desktop\Lab 2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.csproj.CoreCompileInputs.cache
+C:\Users\Artemy\Desktop\Lab 2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.exe
+C:\Users\Artemy\Desktop\Lab 2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.pdb
+C:\Users\Artemy\Desktop\ООП\Лабы\OOP_Labs\Lab2\OOP_Lab2\OOP_Lab2\bin\Debug\OOP_Lab2.exe.config
+C:\Users\Artemy\Desktop\ООП\Лабы\OOP_Labs\Lab2\OOP_Lab2\OOP_Lab2\bin\Debug\OOP_Lab2.exe
+C:\Users\Artemy\Desktop\ООП\Лабы\OOP_Labs\Lab2\OOP_Lab2\OOP_Lab2\bin\Debug\OOP_Lab2.pdb
+C:\Users\Artemy\Desktop\ООП\Лабы\OOP_Labs\Lab2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.csprojAssemblyReference.cache
+C:\Users\Artemy\Desktop\ООП\Лабы\OOP_Labs\Lab2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.csproj.CoreCompileInputs.cache
+C:\Users\Artemy\Desktop\ООП\Лабы\OOP_Labs\Lab2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.exe
+C:\Users\Artemy\Desktop\ООП\Лабы\OOP_Labs\Lab2\OOP_Lab2\OOP_Lab2\obj\Debug\OOP_Lab2.pdb
