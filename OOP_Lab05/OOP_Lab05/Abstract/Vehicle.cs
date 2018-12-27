@@ -14,7 +14,14 @@ namespace OOP_Lab05
         public Vehicle(IEngine engine, int weight)
         {
             this.Engine = engine;
-            this.Weight = weight;
+            if (weight > 0)
+            {
+                this.Weight = weight;
+            }
+            else
+            {
+                throw new VehicleExсeption("Масса не может быть отрицательным значением.", weight);
+            }
         }
 
         public abstract void PlaySound();

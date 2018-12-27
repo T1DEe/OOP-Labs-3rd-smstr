@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab05
+namespace OOP_Lab14
 {
-    abstract class Vehicle
+    [Serializable]
+    public abstract class Vehicle
     {
         public IEngine Engine { get; set; }
         public int Weight { get; set; }

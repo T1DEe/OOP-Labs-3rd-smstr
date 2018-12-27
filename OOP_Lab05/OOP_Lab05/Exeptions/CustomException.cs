@@ -1,10 +1,15 @@
 ﻿using System;
-namespace OOP_Lab05.Exeptions
-{
-    public class CustomExeption
+namespace OOP_Lab05
+{   
+    class CustomException : Exception
     {
-        public CustomExeption()
+        public string ErrorClass { get; set; }
+
+        public CustomException(string message, string errorClass)
+            : base(message)
         {
+            this.ErrorClass = errorClass;
         }
     }
 }
+

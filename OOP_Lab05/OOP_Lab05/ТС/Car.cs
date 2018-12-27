@@ -13,6 +13,10 @@ namespace OOP_Lab05
         public Car(CarEngine engine, int weight, int length) 
             : base(engine, weight)
         {
+            if (length < 0)
+            {
+                throw new CustomException("Длина не может быть отрицательным значением.", "Car");
+            }
             this.Length = length;
         }
 
@@ -20,6 +24,5 @@ namespace OOP_Lab05
         {
             Console.WriteLine("Вжжжж-жжжжжж-жжжжжж");
         }
-
     }   
 }

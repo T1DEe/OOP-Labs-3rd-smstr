@@ -1,6 +1,7 @@
 ﻿using System;
-namespace OOP_Lab05
-{   
+namespace OOP_Lab14
+{
+    [Serializable]
     class CustomException : Exception
     {
         public string ErrorClass { get; set; }

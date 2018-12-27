@@ -6,30 +6,17 @@ using System.Threading.Tasks;
 
 namespace OOP_Lab05
 {
-    class Сarriage
+    abstract class Сarriage
     {
-        public int NumOfPlaces { get; }
-        public string Color { get; set; }
-        public string NameOfСonductor { get; set; }
+        public int Length { get; }
+        public int Height { get; }
 
-        public Сarriage(int numOfPlaces, string color, string nameOfConductor)
+        public Сarriage(int lenght, int height)
         {
-            this.NumOfPlaces = numOfPlaces;
-            this.Color = color;
-            this.NameOfСonductor = nameOfConductor;
+            this.Length = lenght;
+            this.Height = height;
         }
 
-        public Сarriage()
-        {
-            this.NumOfPlaces = 50;
-            this.Color = "Blue";
-            this.NameOfСonductor = "None";
-        }
-
-        public void GetInfo()
-        {
-            Console.WriteLine("Number of Places: {0}, Color of carriage: {1}, Name of conductor: {2}.", NumOfPlaces, Color, NameOfСonductor);
-        }
-
+        public abstract void DoSomething();
     }
 }

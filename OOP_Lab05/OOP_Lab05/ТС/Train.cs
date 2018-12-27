@@ -9,24 +9,20 @@ namespace OOP_Lab05
      class Train : Vehicle
     {
         public int NumOfCarraige { get; set; }
-
-
-        public Train(TrainEngine engine, int weight, int waste, int numOfCarriage)
+        
+        public Train(TrainEngine engine, int weight, int numOfCarriage)
             : base(engine, weight)
         {
-            this.
+            if (numOfCarriage < 0)
+            {
+                throw new CustomException("Кол-во вагоновы не может быть отрицательным значением.", "Train");
+            }
+            this.NumOfCarraige = numOfCarriage;
         }
 
-        public Train(IEngine engine, string color) : base(engine)
+        public override void PlaySound()
         {
-            engine = new TrainEngine();
-            Color = color;
-        }
-
-        public Train(IEngine engine, int horsePower, int maxSpeed, int waste, string color) : base(engine)
-        {
-            engine = new TrainEngine(horsePower, maxSpeed, waste);
-            Color = color;
+            Console.WriteLine("Чуууу-чууууух");
         }
     }
 }

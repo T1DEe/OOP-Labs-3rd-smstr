@@ -1,0 +1,10 @@
+﻿Directories: 
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/.vs
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/MAGInspect\
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/MAGInspect\MAGFiles\
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/OOP_Lab13
+Files: 
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/.DS_Store
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/OOP_Lab13.sln
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/maglogfile.txt
+/Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13/newName.txt

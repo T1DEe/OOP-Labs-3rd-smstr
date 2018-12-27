@@ -1,10 +1,16 @@
 ﻿using System;
-namespace OOP_Lab05.Exeptions
+namespace OOP_Lab05
 {
-    public class AgencyException
+    class AgencyException : CustomException
     {
-        public AgencyException()
+        public string ErrorName { get; set; }
+        public int ErrorId { get; set; }
+
+        public AgencyException(string message, string errorName, int errorId)
+            : base(message, "Agency")
         {
+            this.ErrorName = errorName;
+            this.ErrorId = errorId;
         }
     }
 }

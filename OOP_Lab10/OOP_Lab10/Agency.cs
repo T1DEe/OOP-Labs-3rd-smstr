@@ -2,91 +2,64 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace OOP_Lab05
+namespace OOP_Lab10
 {
-    class Agency
+    class Agency : IComparable
     {
+        readonly int maxSize;
+        private Vehicle[] parkArray;
 
-        public struct Title
+        //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+        public Vehicle this[int index]
         {
-            public string name;
-            public int id;
-
-            public Title(string name, int id)
+            get
             {
-                if(name == "")
+                if(index > maxSize)
                 {
-                    throw new AgencyException("Имя агенства не может быть пустым.",name, id);
+                    Console.WriteLine("Неверный индекс.");
+                    return null;
                 }
-                this.name = name;
-                this.id = id;
+                else
+                    return parkArray[index];
             }
-        }
-
-        public  List<Vehicle> parkArray;
-
-        // индексатор
-        //public Vehicle this[int index]
-        //{
-        //    get
-        //    {
-        //        if(index > size)
-        //        {
-        //            Console.WriteLine("Неверный индекс.");
-        //            return null;
-        //        }
-        //        else
-        //        {
-        //            return parkArray[index];
-        //        }
-        //    }
-        //    set
-        //    {
-        //        if (index > size)
-        //        {
-        //            Console.WriteLine("Неверный индекс.");
-        //        }
-        //        else
-        //        {
-        //            parkArray[index] = value;
-        //        }
-        //    }
-        //}
-        //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-        public Agency()
-        {
-            parkArray = new List<Vehicle>();
-            Title title = new Title("default", 0);
-        }
-
-        public Agency(string titleName, int titleId)
-        {
-            parkArray = new List<Vehicle>();
-            Title title = new Title(titleName, titleId);
-        }
-
-        //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-        public void Delete(int index)
-        {
-            parkArray.RemoveAt(index);
-        }
-
-
-        public void Add(Vehicle item)
-        {
-            parkArray.Add(item);
-        }
-
-
-        public int GetCommonWeight()
-        {
-            int commonWeight = 0;
-            foreach(Vehicle item in parkArray)
+            set
             {
-                return commonWeight += item.Weight;
+                if (index > maxSize)
+                {
+                    Console.WriteLine("Неверный индекс.");
+                }
+                else
+                {
+                    parkArray[index] = value;
+                }
             }
-            return commonWeight;
+        }
+        //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+        public Agency(int size)
+        {
+            maxSize = size;
+            parkArray = new Vehicle[size];
+        }
+
+        //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+        public void Print()
+        {
+            foreach (Vehicle item in parkArray)
+                Console.WriteLine($"Name: {item.Name}");
+        }
+
+        public Vehicle[] GetVehicles() => parkArray;
+
+
+        public int CompareTo(object agency)
+        {
+            if (parkArray.Length > ((Agency)agency).parkArray.Length)
+                return 1;
+            if (parkArray.Length < ((Agency)agency).parkArray.Length)
+                return -1;
+            return 0;
         }
     }
 }

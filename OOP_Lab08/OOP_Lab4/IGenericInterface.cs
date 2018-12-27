@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace OOP_Lab4
 {
-    public class IGenericInterface
+    public interface IGenericInterface<T>
     {
-        public IGenericInterface()
-        {
-        }
+        void Add(T item);
+        void Delete(int index);
+        void Show();
     }
 }

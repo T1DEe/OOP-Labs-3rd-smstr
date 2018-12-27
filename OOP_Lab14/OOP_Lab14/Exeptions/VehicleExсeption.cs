@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab05
+namespace OOP_Lab14
 {
+    [Serializable]
     class VehicleExсeption : CustomException
     {
         public int ErrorWeight { get; set; }

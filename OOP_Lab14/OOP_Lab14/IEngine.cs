@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab05
+namespace OOP_Lab14
 {
-    interface IEngine
+    public interface IEngine
     {
         int HorsePower { get; }
 

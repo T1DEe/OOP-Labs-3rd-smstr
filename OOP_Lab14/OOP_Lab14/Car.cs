@@ -4,11 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab05
+namespace OOP_Lab14
 {
-    class Car : Vehicle
+    [Serializable]
+    public class Car : Vehicle
     {
-        int Length { get; }
+        public int Length { get; }
+
+        public Car()
+            : base(new CarEngine(), 2000)
+        {
+            this.Length = 1500;
+        }
+
 
         public Car(CarEngine engine, int weight, int length) 
             : base(engine, weight)

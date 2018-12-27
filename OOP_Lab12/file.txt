@@ -1,0 +1,12 @@
+﻿Namespace.ClassName: OOP_Lab12.MainClass
+Its constructors: 
+	.ctor
+Its fields: 
+Its properties: 
+Methods which it uses: 
+	TestMethod
+	Equals
+	GetHashCode
+	GetType
+	ToString
+parameters	890 somestring

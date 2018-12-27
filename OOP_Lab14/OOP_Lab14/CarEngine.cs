@@ -1,6 +1,7 @@
 ﻿using System;
-namespace OOP_Lab05
+namespace OOP_Lab14
 {
+    [Serializable]
     public class CarEngine : IEngine
     {
         public int HorsePower { get; }

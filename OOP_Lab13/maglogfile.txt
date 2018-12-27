@@ -1,0 +1,104 @@
+﻿Disk Name /
+Disk space 121123069952
+Disk free space 23599177728
+Volume label /
+
+Disk Name /dev
+Disk space 190464
+Disk free space 0
+Volume label /dev
+
+Disk Name /private/var/vm
+Disk space 121123069952
+Disk free space 120049307648
+Volume label /private/var/vm
+
+Disk Name /net
+Disk space 0
+Disk free space 0
+Volume label /net
+
+Disk Name /home
+Disk space 0
+Disk free space 0
+Volume label /home
+
+
+Space 0
+Extension .txt
+Name maglogfile.txt
+
+
+Dir name /Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13
+
+Time creation 8/22/2018 10:12:47 AM
+
+
+Dir creation time 12/25/2018 4:51:27 PM
+
+Dir 2
+
+Files 3
+
+Parent dir Лабы
+ООП (2к1с)
+Учебка
+Documents
+artemymarkovsky
+Users
+/
+
+
+$Session - 12/25/2018 12:00:00 AM$
+Disk Name /
+Disk space 121123069952
+Disk free space 23599013888
+Volume label /
+
+Disk Name /dev
+Disk space 190976
+Disk free space 0
+Volume label /dev
+
+Disk Name /private/var/vm
+Disk space 121123069952
+Disk free space 120049307648
+Volume label /private/var/vm
+
+Disk Name /net
+Disk space 0
+Disk free space 0
+Volume label /net
+
+Disk Name /home
+Disk space 0
+Disk free space 0
+Volume label /home
+
+
+Space 746
+Extension .txt
+Name maglogfile.txt
+
+
+Dir name /Users/artemymarkovsky/Documents/Учебка/ООП (2к1с)/Лабы/OOP_Lab13
+
+Time creation 12/25/2018 4:53:17 PM
+
+
+Dir creation time 12/25/2018 4:53:17 PM
+
+Dir 4
+
+Files 4
+
+Parent dir Лабы
+ООП (2к1с)
+Учебка
+Documents
+artemymarkovsky
+Users
+/
+
+
+$Session - 12/25/2018 12:00:00 AM$

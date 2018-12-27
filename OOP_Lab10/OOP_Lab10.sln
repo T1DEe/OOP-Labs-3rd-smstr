@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Lab10", "OOP_Lab10\OOP_Lab10.csproj", "{92F8F545-1956-4DD6-AA94-6402B40089FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92F8F545-1956-4DD6-AA94-6402B40089FA}.Debug|x86.ActiveCfg = Debug|x86
+		{92F8F545-1956-4DD6-AA94-6402B40089FA}.Debug|x86.Build.0 = Debug|x86
+		{92F8F545-1956-4DD6-AA94-6402B40089FA}.Release|x86.ActiveCfg = Release|x86
+		{92F8F545-1956-4DD6-AA94-6402B40089FA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

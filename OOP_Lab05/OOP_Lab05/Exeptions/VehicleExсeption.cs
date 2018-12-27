@@ -1,10 +1,19 @@
 ﻿using System;
-namespace OOP_Lab05.Exeptions
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOP_Lab05
 {
-    public class CustomExeption
+    class VehicleExсeption : CustomException
     {
-        public CustomExeption()
+        public int ErrorWeight { get; set; }
+
+        public VehicleExсeption(string message, int errorWeight)
+            : base(message, "Vehicle")
         {
+            this.ErrorWeight = errorWeight;
         }
     }
 }
