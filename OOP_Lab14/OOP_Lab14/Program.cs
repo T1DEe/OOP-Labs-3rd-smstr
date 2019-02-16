@@ -4,8 +4,6 @@ using System.Xml.Linq;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization.Formatters.Soap;
 //using System.Runtime.Serialization.Json;
@@ -89,7 +87,7 @@ namespace OOP_Lab14
             XmlSerializer xmlFormatter2 = new XmlSerializer(typeof(User));
             using (FileStream file = new FileStream("users.xml", FileMode.OpenOrCreate))
             {
-                xmlFormatter2.Serialize(file, users);
+                xmlFormatter2.Serialize(file, users); //???
             }
             using (FileStream file = new FileStream("users.xml", FileMode.Open))
             {
@@ -102,7 +100,39 @@ namespace OOP_Lab14
 
             // 3 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+            XmlDocument xml = new XmlDocument();
+            xml.Load("users.xml");
+            XmlElement element = xml.DocumentElement;
+            XmlNodeList xmlList = element.SelectNodes("//shipsArray/Ship[@Carrying]");
+            XmlNodeList xmlList1 = element.SelectNodes("//users/Ship[@Carrying]");
+            Console.WriteLine("Attribute carrying in Ship elements: ");
+            foreach (XmlNode x in xmlList)
+                Console.WriteLine(x.SelectSingleNode("@Carrying").Value);
 
+            XmlNode node = element.SelectSingleNode("maxIndex");
+            Console.WriteLine("MaxIndex value: " + node.InnerText);
+            Console.WriteLine("=====================================================\n");
+
+
+            XDocument xdoc = new XDocument(new XElement("phones",
+                                            new XElement("phone",
+                                                new XAttribute("name", "iPhone 6"),
+                                                new XElement("company", "Apple")),
+                                            new XElement("phone",
+                                                new XAttribute("name", "iPhone 7"),
+                                                new XElement("company", "Apple")),
+                                            new XElement("phone",
+                                                new XAttribute("name", "iPhone 8"),
+                                                new XElement("company", "Apple")),
+                                            new XElement("phone",
+                                                new XAttribute("name", "Samsung Galaxy S5"),
+                                                new XElement("company", "Samsung"),
+                                                new XElement("price", "33000"))));
+            xdoc.Save("phones.xml");
+            var phones = from xe in xdoc.Element("phones").Elements("phone") where xe.Element("company").Value == "Apple" select xe;
+            foreach (XElement el in phones)
+                Console.WriteLine($"Name: {el.Attribute("name").Value}, company: {el.Element("company").Value}");
+            Console.WriteLine("=====================================================\n");
 
         }
     }
