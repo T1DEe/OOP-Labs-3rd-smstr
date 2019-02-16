@@ -1,5 +1,5 @@
 # OOP_Labs
-Task from BSTU
 
+BSTU. 3rd semester.  
 Artemy Markovsky, group 4, POIT
 
