@@ -1,64 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace OOP_Lab4
 {
     public class List
     {
-        // Поля
-        public Date date;
-        private readonly int maxSize;
-        public int Size { get; set; }
-        public string[] list;
+        // ПОЛЯ =======================================================
+        private readonly Owner owner;
+        private readonly Date date = new Date();
+        private List<string> collection;
 
-        // Свойства
-        public int MaxSize
+        // СВОЙСТВА ===================================================
+        public int Size { get; }
+
+        // КОНСТРУКТОРЫ ===============================================
+        public List(int ownerID, string ownerFIO)
         {
-            get
-            {
-                return maxSize;
-            }
-        }
-        
-        // Констукторы
-        public List(int maxSize)
-        {
-            this.maxSize = maxSize;
-            list = new string[maxSize];
+            this.owner = new Owner(ownerID, ownerFIO);
         }
 
-        // Методы
-        public bool AddItem(string item)
+        // МЕТОДЫ =====================================================
+        public void AddItem(string item)
         {
-            if ((Size + 1) < maxSize)
-            {
-                Size++;
-                list[Size] = item;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            collection.Add(item);
         }
 
-        public bool DeleteLast()
+        public void DeleteLast()
         {
-            if(Size > 0)
-            {
-                Size--;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+
         }
 
-        // Перегрузка операторов
+        // ПЕРЕГРУЗКИ =================================================
         public static bool operator +(List list, string item)
         {
             list.list.Append(item);
@@ -125,28 +99,32 @@ namespace OOP_Lab4
             return false;
         }
 
+
         public class Owner
         {
-            private static readonly int id = 021199;
-            private static readonly string fio = "MAG";
+            private readonly int id;
+            private readonly string fio;
+
+            public Owner(int id, string fio)
+            {
+                this.id = id;
+                this.fio = fio;
+            }
 
             public void GetInfo()
             {
-                Console.WriteLine("{0}, {1}", id, fio);
+                Console.WriteLine($"Owner – ID: {id}, FIO: {fio}.");
             }
         }
 
-       
+        public class Date
+        {
+            public readonly DateTime time;
 
-    }
-}
-
-public class Date
-{
-    public static readonly DateTime time = DateTime.Now;
-
-    public Date()
-    {
-
+            public Date()
+            {
+                time = DateTime.Now;
+            }
+        }
     }
 }
