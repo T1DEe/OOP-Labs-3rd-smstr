@@ -32,8 +32,10 @@ namespace OOP_Lab3
                     Console.WriteLine(item);
             }
 
+            Time.HoursSum(one, two, out five);
+            one.Equals(two);
 
-            Console.WriteLine(a1.HoursSum(ref a2, ref a3, out a4));
+
 
             Console.ReadKey();
         }
