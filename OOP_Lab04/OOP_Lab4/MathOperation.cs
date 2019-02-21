@@ -8,10 +8,10 @@ namespace OOP_Lab4
 {
     static class MathOperation
     {
-        public static string Max(List list)
+        public static string Max(MyList list)
         {
-            string str = list.list[0];
-            foreach (string item in list.list)
+            string str = list.GetItemByIndex(0);
+            foreach (string item in list.GetList())
             {
                 if(str.Length < item.Length)
                 {
@@ -21,10 +21,10 @@ namespace OOP_Lab4
             return str;
         }
 
-        public static string Min(List list)
+        public static string Min(MyList list)
         {
-            string str = list.list[0];
-            foreach (string item in list.list)
+            string str = list.GetItemByIndex(0);
+            foreach (string item in list.GetList())
             {
                 if (str.Length > item.Length)
                 {
@@ -32,12 +32,6 @@ namespace OOP_Lab4
                 }
             }
             return str;
-        }
-
-        public static int Length(List list)
-        {
-            int count = list.list.Length;
-            return count;
         }
 
         public static int CountOfWords(this string str)
@@ -48,9 +42,9 @@ namespace OOP_Lab4
             return count;
         }
 
-        public static bool IsEmptyElement(this List list)
+        public static bool IsContainsEmptyElement(this MyList list)
         {
-            foreach (string item in list.list)
+            foreach (string item in list.GetList())
             {
                 if (item == "")
                 {

@@ -10,17 +10,16 @@ namespace OOP_Lab4
     {
         static void Main(string[] args)
         {
-            List a = new List(10);
-            a.AddItem("a");
-            a.AddItem("b");
-            a.AddItem("c");
-            a.AddItem("d");
+            MyList list = new MyList(1, "MAG");
+            list.AddItem("Ivan");
+            list.AddItem("Andrew");
+            list.AddItem("Natalia");
+            list.AddItem("Victor");
 
-            List.Owner a2 = new List.Owner();
             string abc = "awdg fseol  ajes";
-            Console.WriteLine(abc.CountOfWords());
+            Console.WriteLine($"Count of words: {abc.CountOfWords()}");
 
-            Console.ReadKey();
+            list.GetOwner().GetInfo();
         }
     }
 }
